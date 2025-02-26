@@ -2,6 +2,7 @@ import cv2
 import numpy as np
 import streamlit as st
 from PIL import Image
+from io import BytesIO
 
 # Streamlit Web App UI
 st.title("HDR Image Fusion")
@@ -51,4 +52,4 @@ if img_file_buffer_1 and img_file_buffer_2:
     # Download result
     out_image = Image.fromarray(fused_hdr[:, :, ::-1])
     # Create a link for downloading the output file.
-    st.markdown(get_image_download_link(out_image, "face_output.jpg", 'Download Output Image'), unsafe_allow_html=True)
+    st.markdown(get_image_download_link(out_image, "HDR_output.jpg", 'Download Output Image'), unsafe_allow_html=True)
