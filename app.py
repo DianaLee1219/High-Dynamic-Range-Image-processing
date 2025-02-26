@@ -7,14 +7,26 @@ from PIL import Image
 st.title("HDR Image Fusion")
 st.write("Upload two images with different exposures.")
 
-# Upload images
-uploaded_file1 = st.file_uploader("Upload the first image (bright window, dark room)", type=["jpg", "png", "jpeg"])
-uploaded_file2 = st.file_uploader("Upload the second image (bright room, overexposed window)", type=["jpg", "png", "jpeg"])
+# Create file uploader widget.
+img_file_buffer_1 = st.file_uploader("Upload the bright image", type=['jpg', 'jpeg', 'png'])
+img_file_buffer_2 = st.file_uploader("Upload the dark image", type=['jpg', 'jpeg', 'png'])
 
-if uploaded_file1 and uploaded_file2:
+# Initialize session state variables
+if 'file_uploaded_name' not in st.session_state:
+    st.session_state.file_uploaded_name = None
+    
+# Function to generate a download link for output file.
+def get_image_download_link(img, filename, text):
+    buffered = BytesIO()
+    img.save(buffered, format="JPEG")
+    img_str = base64.b64encode(buffered.getvalue()).decode()
+    href = f'<a href="data:file/txt;base64,{img_str}" download="{filename}">{text}</a>'
+    return href
+
+if img_file_buffer_1 and img_file_buffer_2:
     # Convert uploaded files to OpenCV images
-    image1 = np.array(Image.open(uploaded_file1).convert("RGB"))
-    image2 = np.array(Image.open(uploaded_file2).convert("RGB"))
+    image1 = np.array(Image.open(img_file_buffer_1).convert("RGB"))
+    image2 = np.array(Image.open(img_file_buffer_2).convert("RGB"))
 
     # Convert to OpenCV BGR format
     img1 = cv2.cvtColor(image1, cv2.COLOR_RGB2BGR)
@@ -37,5 +49,6 @@ if uploaded_file1 and uploaded_file2:
     st.image([image1, image2, fused_hdr], caption=["Bright Window Image", "Bright Room Image", "HDR Fused Result"], width=300)
 
     # Download result
-    result_pil = Image.fromarray(fused_hdr)
-    st.download_button("Download HDR Image", data=result_pil.tobytes(), file_name="hdr_result.jpg", mime="image/jpeg")
+    out_image = Image.fromarray(fused_hdr[:, :, ::-1])
+    # Create a link for downloading the output file.
+    st.markdown(get_image_download_link(out_image, "face_output.jpg", 'Download Output Image'), unsafe_allow_html=True)
