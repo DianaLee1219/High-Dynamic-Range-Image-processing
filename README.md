@@ -2,6 +2,12 @@ What iphone camera can't do was showing my beautiful workplace!
 So I decided to make HDR image by myself, however, I faced the blurry issue, so I applied the feature matching tech.
 
 Detail codes can be found at colab.py
+Images 
+- with numbers only: original pictures with ev numbers taken by iphone 11
+- aligned_n: after alignmnet based on image 0
+- Convert exposure values into exposure time!
+- ev list : [0.0, 0.3, 0.7, 1.0, 1.3, 1.7, 2.0]
+- exposure time: [0.0100, 0.0119, 0.0151, 0.0200, 0.0246, 0.0317, 0.0400]
 
 1) without alignment_fusion_mertens
 2) without alighnment_ldr_robertson
