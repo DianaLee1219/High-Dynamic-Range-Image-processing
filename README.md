@@ -3,14 +3,14 @@ So I decided to make HDR image by myself, however, I faced the blurry issue, so 
 
 Detail codes can be found at colab.py
 Images 
-- with numbers only: original pictures with ev numbers taken by iphone 11
-- aligned_n: after alignmnet based on image 0
+- Numbers only: original pictures with ev numbers taken by iphone 11
+- Aligned_n: after alignmnet based on image 0
 - Convert exposure values into exposure time!
-- ev list : [0.0, 0.3, 0.7, 1.0, 1.3, 1.7, 2.0]
-- exposure time: [0.0100, 0.0119, 0.0151, 0.0200, 0.0246, 0.0317, 0.0400]
+- Ev list : [0.0, 0.3, 0.7, 1.0, 1.3, 1.7, 2.0]
+- Exposure time: [0.0100, 0.0119, 0.0151, 0.0200, 0.0246, 0.0317, 0.0400]
 
-1) without alignment_fusion_mertens
-2) without alighnment_ldr_robertson
+1) Without alignment_fusion_mertens
+2) Without alighnment_ldr_robertson
 3) With Alignment (cv2.createTonemap(gamma=1.5))
 ![without alignment_fusion_mertens](https://github.com/user-attachments/assets/36d6b357-12a3-46da-a330-a9a9f40f4ed4)
 ![without alighnment_ldr_robertson](https://github.com/user-attachments/assets/ce3d0592-ba0d-4f62-bc36-8b0437d95bc9)
