@@ -10,9 +10,11 @@ But honestly, who uses a tripod for iPhone photos these days?
 To fix this, I applied a feature matching method—and it worked perfectly!
 
 📌 About the Code
+
 This project code can be found at WindowViewCozyDesk.py
 
 📷 About the Images
+
 Numbers only → Original photos taken with an iPhone 11, labeled by EV values.
 Aligned_n → Images aligned relative to image 0 for better HDR processing.
 
