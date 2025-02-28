@@ -9,16 +9,18 @@ But honestly, who uses a tripod for iPhone photos these days?
 
 To fix this, I applied a feature matching method—and it worked perfectly!
 
-Detail codes can be found at WindowViewCozyDesk.py
+📌 About the Code
+This project code can be found at WindowViewCozyDesk.py
 
-About the code
-Convert exposure values into exposure time!
-- Ev list : [0.0, 0.3, 0.7, 1.0, 1.3, 1.7, 2.0]
-- Exposure time: [0.0100, 0.0119, 0.0151, 0.0200, 0.0246, 0.0317, 0.0400]
-About Images 
-- Numbers only: original pictures with ev numbers taken by iphone 11
-- Aligned_n: after alignmnet based on image 0
+📷 About the Images
+Numbers only → Original photos taken with an iPhone 11, labeled by EV values.
+Aligned_n → Images aligned relative to image 0 for better HDR processing.
 
+The exposure values (EV) converted into exposure time for HDR image processing.
+
+🔹 Exposure Value to Exposure Time Conversion
+EV List: [0.0, 0.3, 0.7, 1.0, 1.3, 1.7, 2.0]
+Exposure Time (seconds): [0.0100, 0.0119, 0.0151, 0.0200, 0.0246, 0.0317, 0.0400]
 
 1) Without alignment_fusion_mertens
 2) Without alighnment_ldr_robertson
