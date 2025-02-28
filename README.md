@@ -1,7 +1,16 @@
-What iphone camera can't do was showing my beautiful workplace!
-So I decided to make HDR image by myself, however, I faced the blurry issue, so I applied the feature matching tech.
+My workplace has a beautiful view through the window and a cozy desktop setup.
 
-Detail codes can be found at colab.py
+However, my iPhone 11 struggled to capture both bright and dark areas in a single shot. 
+So, I decided to create an HDR image myself!
+
+The challenge? 
+I took six different pictures without a tripod, resulting a blurry result. 
+But honestly, who uses a tripod for iPhone photos these days?
+
+To fix this, I applied a feature matching method—and it worked perfectly!
+
+Detail codes can be found at WindowViewCozyDesk.py
+
 About the code
 Convert exposure values into exposure time!
 - Ev list : [0.0, 0.3, 0.7, 1.0, 1.3, 1.7, 2.0]
