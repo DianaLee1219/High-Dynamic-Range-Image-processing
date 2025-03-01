@@ -13,10 +13,15 @@ To fix this, I applied a feature matching method—and it worked perfectly!
 
 This project code can be found at WindowViewCozyDesk.py
 
+1. Put your images with different exposure time. (you need to adjust the EV LIST and Exposure Time) 
+2. The code will do feature matching for you. (no need a tripod)
+3. Adjust a gamma vaule for tone mapping. (default gamma = 2.2)
+4. Download your HDR image!
+
 📷 About the Images
 
-Numbers only → Original photos taken with an iPhone 11, labeled by EV values.
-Aligned_n → Images aligned relative to image 0 for better HDR processing.
+Numbers only (Input) → Original photos taken with an iPhone 11, labeled by EV values.
+Aligned_n (Interim result) → Images aligned relative to image 0 for better HDR processing. 
 
 The exposure values (EV) converted into exposure time for HDR image processing.
 
