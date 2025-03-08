@@ -36,10 +36,12 @@ Aligned_n (Interim result) → Images aligned relative to image 0 for better HDR
 The exposure values converted into exposure time for HDR image processing.
 
 🔹 Exposure Value to Exposure Time Conversion
+
 EV List: [0.0, 0.3, 0.7, 1.0, 1.3, 1.7, 2.0]
 Exposure Time (seconds): [0.0100, 0.0119, 0.0151, 0.0200, 0.0246, 0.0317, 0.0400]
 
 🔹 What is EV?
+
 "EV" indicates the amount of light (exposure amount) obtained from the combination of "lens aperture value" and "shutter speed." 
 As the EV value increases, the amount of light decreases (for bright objects), and as the value decreases, the amount of light increases (for dark objects).
 
