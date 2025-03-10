@@ -11,11 +11,8 @@ But honestly, who uses a tripod for iPhone photos these days?
 
 To fix this, I applied a feature matching method—and it worked perfectly!
 Now you can see my workplace showing both bright and dark regions in one image below.
+![image](https://github.com/user-attachments/assets/c4b898c9-d3dd-4167-9803-1fcdee48b775)
 
-1) Without alignment_fusion_mertens
-2) Without alighnment_ldr_robertson
-3) With Alignment (cv2.createTonemap(gamma=1.5))
-![image](https://github.com/user-attachments/assets/96882524-d3bc-4168-946e-f7ea4dae3fea)
 
 📌 About the Code
 
