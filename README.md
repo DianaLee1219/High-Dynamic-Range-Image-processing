@@ -25,7 +25,7 @@ This project code can be found at WindowViewCozyDesk.py
 
 📷 About the Images
 
-Numbers only (Input) → Original photos taken with an iPhone 11, labeled by EV values.
+Numbers only (Input) → Original photos taken with an iPhone 12, labeled by EV values.
 
 Aligned_n (Interim result) → Images aligned relative to image 0 for better HDR processing. 
 
