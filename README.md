@@ -2,7 +2,7 @@
 
 My workplace has a beautiful view through the window and a cozy desktop setup.
 
-However, my iPhone 11 struggled to capture both bright and dark areas in a single shot. 
+However, my iPhone 12 struggled to capture both bright and dark areas in a single shot. 
 So, I decided to create an HDR image myself!
 
 The challenge? 
